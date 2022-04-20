@@ -1,5 +1,7 @@
-import firebase from 'firebase';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
 
+// key to coneect firebase to our front end (react)
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyCmevzsQdqbVU5tLB5zsT2xQGsLAgQnGxY",
     authDomain: "todo-app-1dda7.firebaseapp.com",
@@ -12,4 +14,4 @@ const firebaseApp = firebase.initializeApp({
 
 const database = firebaseApp.firestore();
 
-export { databse }
+export { database };
